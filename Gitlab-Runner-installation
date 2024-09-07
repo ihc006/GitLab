@@ -21,3 +21,34 @@ sudo gitlab-runner start
 
 
 *----------------------------------------------------------*
+
+sudo curl -L --output /usr/local/bin/gitlab-runner  https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnhmZzZObkRWa04xM3lBTUo5WG1EeVF6NU05d3xBQ3Jtc0tsbDZOeEthakZVbVJhWEhDTlB6OW9NbnJta2Iwb0FBUjExNWZ4NkdIUTExSkZYRVFmRGhIcXFnSkVQWlB0NEd4M2ZWcFdTNzduM25ORVRpeTZjYXliZUJ0aFFaVEN6V2FIZ0QtTG0xcEwzdUNOZmtMQQ&q=https%3A%2F%2Fgitlab-runner-downloads.s3.amazonaws.com%2Flatest%2Fbinaries%2Fgitlab-runner-linux-amd64&v=dVDqEST0CMI
+sudo chmod +x /usr/local/bin/gitlab-runner
+sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+
+sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+sudo gitlab-runner start
+
+sudo gitlab-runner register --url https://gitlab.com/ --registration-token $REGISTRATION_TOKEN
+
+*----------------------------------------------------------*
+
+
+
+*----------------------------------------------------------*
+
+
+
+*----------------------------------------------------------*
+
+
+
+*----------------------------------------------------------*
+
+
+
+*----------------------------------------------------------*
+
+
+
+*----------------------------------------------------------*
