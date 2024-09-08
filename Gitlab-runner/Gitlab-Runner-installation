@@ -1,3 +1,4 @@
+##############  Gitlab-Runner installation Samples from net ###############################3
 
 # Linux x86-64
 sudo curl -L --output /usr/local/bin/gitlab-runner "https://s3.dualstack.us-east-1.amazonaws.com/gitlab-runner-downloads/latest/binaries/gitlab-runner-linux-amd64"
@@ -135,3 +136,17 @@ sudo gitlab-runner register --url https://gitlab.example.net/ --registration-tok
 
 
 *----------------------------------------------------------*
+ # you can promt all params only one line 
+sudo gitlab-runner register \
+  --non-interactive \
+  --name "AppServerDev1_Zerreactor_Frontend" \
+  --url "http://20.93.3.185/" \
+  --registration-token "GR134" \
+  --executor "shell" \
+  --tag-list "AppServerDev_zerreactor_Frontend" \
+  --run-untagged="true" \
+  --locked="false" \
+  --access-level="not_protected"
+
+
+  *----------------------------------------------------------*
